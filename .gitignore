@@ -1,0 +1,33 @@
+node_modules
+dist
+dist-ssr
+*.local
+.env
+.env.*
+!.env.example
+.DS_Store
+playwright-report
+test-results
+coverage
+
+# Large source cookbook PDFs (extracted into src/lib/data/cookbook.ts)
+assets/*.pdf
+assets/*.xlsx
+
+# Adobe Illustrator brand-source art (large binaries — never commit)
+*.ai
+assets/*.ai
+
+# Supabase CLI local link state
+supabase/.temp/
+
+# TypeScript incremental build cache
+*.tsbuildinfo
+
+# Bookends cost/margin data — per-dish making cost and selling price. Keep off
+# the public repo.
+_verify.json
+*.xlsx
+
+# One-off admin scripts that hit the Supabase management API
+_promote.mjs
